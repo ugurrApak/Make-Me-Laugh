@@ -8,12 +8,11 @@ public class AreaEffector3D : MonoBehaviour
     [SerializeField] private float forceMagnitude = 0f;
     [SerializeField] private BoxCollider forceArea;
 
-    private void Update()
-    {
-        
-    }
-    private void OnCollisionEnter(Collision collision)
-    {
 
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Done");
+        other.GetComponent<Rigidbody>().velocity = Vector3.up * force;
     }
+
 }
