@@ -57,13 +57,11 @@ public class PlayerController : MonoBehaviour
         rb.MoveRotation(Quaternion.LookRotation(Vector3.LerpUnclamped(transform.forward, movementVector,
             Vector3.Angle(transform.forward, movementVector) / smoothTurningValue)));
 
-
     }
 
     void OnMove(InputAction.CallbackContext callback)
     {
         movementInput = callback.ReadValue<Vector2>();
-
     }
 
     void OnDash(InputAction.CallbackContext callback)
