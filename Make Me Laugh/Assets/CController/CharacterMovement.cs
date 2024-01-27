@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,23 +6,74 @@ using UnityEngine.InputSystem;
 
 public class CharacterMovement : MonoBehaviour
 {
+    //Components and Objects
     CharacterController characterController;
     PlayerInput playerInput;
+    Animator animator;
 
+    //Input Variables
     Vector2 movementInput;
     Vector3 movementVector;
-    [SerializeField] float moveSpeed = 5f;
+    Vector3 runVector;
+    bool isRunPressed;
+    [SerializeField] float moveSpeed = 2f;
+    [SerializeField] float runSpeed = 3f;
 
+
+    //Gravity Variables
+    float groundGravity = -0.5f;
+    float gravity = -9.81f;
+
+    //Animations Variables
+    bool isWalkPressed;
+    int isWalkingHash;
+    int isRunningHash;
+    bool isWalking;
+    bool isRunning;
+
+    //Jump Variables
+    int isJumpingHash;
+    bool isJumpPressed;
+    bool isJumping;
+    float jumpVelocity;
+    float maxJumpHeight = 1f;
+    float maxJumpTime = 0.5f;
+
+    //Rotate Variables
+    public float turnSmoothTime = 0.1f;
+    float turnSmoothVelocity;
+
+    //Getters and Setters
     public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
 
     private void Awake()
     {
         playerInput = new PlayerInput();
         characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
+
+        isWalkingHash = Animator.StringToHash("isWalking");
+        isRunningHash = Animator.StringToHash("isRunning");
+        isJumpingHash = Animator.StringToHash("isJumping");
 
         playerInput.CharacterController.Move.started += OnMove;
         playerInput.CharacterController.Move.performed += OnMove;
         playerInput.CharacterController.Move.canceled += OnMove;
+
+        playerInput.CharacterController.Run.started += OnRun;
+        playerInput.CharacterController.Run.canceled += OnRun;
+
+        playerInput.CharacterController.Jump.started += OnJump;
+        playerInput.CharacterController.Jump.canceled += OnJump;
+
+        SetupJumpVariables();
+    }
+
+    private void SetupJumpVariables()
+    {
+        float timeToApex = maxJumpTime / 2;
+        gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
+        jumpVelocity = (2 * maxJumpHeight) / timeToApex;
 
     }
 
@@ -35,18 +87,91 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        HandleAnimation();
+        HandleRotation();
+        if (isRunPressed) {
+            characterController.Move(runVector * Time.deltaTime);
+        }
+        else {
+            characterController.Move(movementVector * Time.deltaTime);
+        }
+        HandleGravity();
+        HandleJump();
     }
-
 
     void HandleMovement()
     {
-        movementVector = new Vector3(movementInput.x, 0f, movementInput.y);
-        characterController.Move(movementVector * moveSpeed * Time.deltaTime);
+        movementVector = new Vector3(movementInput.x, movementVector.y, movementInput.y);
+        movementVector *= moveSpeed;
+        runVector = movementVector * runSpeed;
+
+        isWalkPressed = movementInput != Vector2.zero ? true : false;
+
+    }
+
+    void HandleGravity()
+    {
+        if (characterController.isGrounded) {
+            movementVector.y = groundGravity;
+            runVector.y = groundGravity;
+        }
+        else {
+            movementVector.y += gravity * Time.deltaTime;
+            runVector.y += gravity * Time.deltaTime;
+        }
+    }
+
+    private void HandleAnimation()
+    {
+        isWalking = animator.GetBool(isWalkingHash);
+        isRunning = animator.GetBool(isRunningHash);
+
+        if (isWalkPressed && !isWalking) {
+            animator.SetBool(isWalkingHash, true);
+        }
+        else if (isWalkPressed && isWalking && isRunPressed && !isRunning) {
+            animator.SetBool(isRunningHash, true);
+        }
+        else if (isWalkPressed && isWalking && !isRunPressed && isRunning) {
+            animator.SetBool(isRunningHash, false);
+        }
+        else if (!isWalkPressed && isWalking) {
+            animator.SetBool(isWalkingHash, false);
+        }
+    }
+
+    void HandleRotation()
+    {
+        float targetAngle = Mathf.Atan2(movementVector.x, movementVector.z) * Mathf.Rad2Deg;
+        float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnSmoothTime);
+        transform.rotation = Quaternion.Euler(0f, angle, 0f);
+    }
+
+    private void HandleJump()
+    {
+        if (isJumpPressed && !isJumping && characterController.isGrounded) {
+            isJumping = true;
+            movementVector.y = jumpVelocity;
+            runVector.y = jumpVelocity;
+        }
+        else if (!isJumpPressed && isJumping && characterController.isGrounded) {
+            isJumping = false;
+        }
     }
 
     void OnMove(InputAction.CallbackContext callback)
     {
         movementInput = callback.ReadValue<Vector2>();
+    }
+
+    void OnRun(InputAction.CallbackContext callback)
+    {
+        isRunPressed = callback.ReadValueAsButton();
+    }
+
+    void OnJump(InputAction.CallbackContext callback)
+    {
+        isJumpPressed = callback.ReadValueAsButton();
     }
 
     private void OnEnable()

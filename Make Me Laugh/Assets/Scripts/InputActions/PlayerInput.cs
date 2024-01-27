@@ -53,6 +53,15 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": ""Press"",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Run"",
+                    ""type"": ""Button"",
+                    ""id"": ""6a0348a3-edd6-4b8e-9826-78f2ce2f278c"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -180,11 +189,22 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""90937470-2522-4a9e-8c27-7d78f58bc0c5"",
-                    ""path"": ""<Keyboard>/shift"",
+                    ""path"": ""<Keyboard>/q"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4763e626-006f-4f11-b3a9-817767d16c27"",
+                    ""path"": ""<Keyboard>/shift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -198,6 +218,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_CharacterController_Move = m_CharacterController.FindAction("Move", throwIfNotFound: true);
         m_CharacterController_Jump = m_CharacterController.FindAction("Jump", throwIfNotFound: true);
         m_CharacterController_Dash = m_CharacterController.FindAction("Dash", throwIfNotFound: true);
+        m_CharacterController_Run = m_CharacterController.FindAction("Run", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -260,6 +281,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_CharacterController_Move;
     private readonly InputAction m_CharacterController_Jump;
     private readonly InputAction m_CharacterController_Dash;
+    private readonly InputAction m_CharacterController_Run;
     public struct CharacterControllerActions
     {
         private @PlayerInput m_Wrapper;
@@ -267,6 +289,7 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_CharacterController_Move;
         public InputAction @Jump => m_Wrapper.m_CharacterController_Jump;
         public InputAction @Dash => m_Wrapper.m_CharacterController_Dash;
+        public InputAction @Run => m_Wrapper.m_CharacterController_Run;
         public InputActionMap Get() { return m_Wrapper.m_CharacterController; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -285,6 +308,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Dash.started -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
+                @Run.started -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnRun;
+                @Run.performed -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnRun;
+                @Run.canceled -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnRun;
             }
             m_Wrapper.m_CharacterControllerActionsCallbackInterface = instance;
             if (instance != null)
@@ -298,6 +324,9 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
+                @Run.started += instance.OnRun;
+                @Run.performed += instance.OnRun;
+                @Run.canceled += instance.OnRun;
             }
         }
     }
@@ -307,5 +336,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
+        void OnRun(InputAction.CallbackContext context);
     }
 }
