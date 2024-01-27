@@ -70,3 +70,12 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+Make Me Laugh/Assets/Scripts/Interactable/IInteractable.cs.meta
+Make Me Laugh/Assets/Scripts/Utilities.meta
+Make Me Laugh/Assets/Scripts/Utilities/AreaEffector3D.cs.meta
+Make Me Laugh/Assets/Scripts/Utilities/FallingStone.cs.meta
+Make Me Laugh/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Make Me Laugh/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+Make Me Laugh/Assets/Scripts/Interactable/IInteractable.cs.meta
+Make Me Laugh/ProjectSettings/Packages/com.unity.probuilder/Settings.json
+Make Me Laugh/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
