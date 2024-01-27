@@ -15,17 +15,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float jumpSpeed = 10f;
     float smoothTurningValue = 480f;
     float dashTime = 1f;
-    [SerializeField] ParticleSystem dashParticleSystem;
 
     bool dashPressed;
     bool canDash = false;
     bool canMove = true;
-    bool canJump;
-    bool isJumpPressed;
 
     int isWalkingHash;
     int isDashingHash;
-    int isJumpingHash;
 
 
     public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
@@ -37,7 +33,6 @@ public class PlayerController : MonoBehaviour
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isDashingHash = Animator.StringToHash("isDashing");
-        isJumpingHash = Animator.StringToHash("isJumping");
 
         playerInput = new PlayerInput();
         playerInput.CharacterController.Move.started += OnMove;
@@ -58,7 +53,6 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         HandleDash();
-        HandleJump();
 
         rb.MoveRotation(Quaternion.LookRotation(Vector3.LerpUnclamped(transform.forward, movementVector,
             Vector3.Angle(transform.forward, movementVector) / smoothTurningValue)));
@@ -75,11 +69,6 @@ public class PlayerController : MonoBehaviour
     void OnDash(InputAction.CallbackContext callback)
     {
         dashPressed = callback.ReadValueAsButton();
-    }
-
-    void OnJump(InputAction.CallbackContext callback)
-    {
-        isJumpPressed = callback.ReadValueAsButton();
     }
 
     void HandleMovement()
@@ -110,16 +99,8 @@ public class PlayerController : MonoBehaviour
             canDash = false;
             animator.SetBool(isDashingHash, true);
             rb.AddForce(movementVector * 5f, ForceMode.Impulse);
-            dashParticleSystem.Play();
             yield return new WaitForSeconds(dashTime);
             canMove = true;
-        }
-    }
-
-    private void HandleJump()
-    {
-        if (isJumpPressed && canJump && !canDash) {
-
         }
     }
 
