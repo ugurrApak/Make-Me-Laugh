@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class InteractableStone : MonoBehaviour, IInteractable
 {
-    public bool Interact(Interactor interactor)
+    private bool isParent = false;
+    public void Interact(Interactor interactor)
     {
-        interactor.GetComponent<PlayerController>();
-        transform.SetParent(interactor.transform);
-        return true;
+        if (!isParent)
+        {
+            interactor.GetComponent<PlayerController>().MoveSpeed = 300f;
+            transform.SetParent(interactor.transform);
+            isParent = true;
+        }
+        else
+        {
+            interactor.GetComponent<PlayerController>().MoveSpeed = 500f;
+            transform.parent = null;
+            isParent = false;
+        }
     }
 }
