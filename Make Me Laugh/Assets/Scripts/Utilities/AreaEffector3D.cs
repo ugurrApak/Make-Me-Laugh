@@ -9,10 +9,10 @@ public class AreaEffector3D : MonoBehaviour
     [SerializeField] private BoxCollider forceArea;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        Debug.Log("Done");
-        other.GetComponent<Rigidbody>().velocity = Vector3.up * force;
+        other.GetComponent<Rigidbody>().AddForce(Vector3.up * force * Time.deltaTime,ForceMode.Impulse);
     }
+
 
 }
