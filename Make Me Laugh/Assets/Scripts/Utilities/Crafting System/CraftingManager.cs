@@ -59,13 +59,13 @@ public class CraftingManager : MonoBehaviour
         string currentRecipeString = "";
         foreach (Item item in itemList)
         {
-            if (item != null)
+            if (item == null)
             {
-                currentRecipeString += item.itemName;
+                break;
             }
             else
             {
-                currentRecipeString += "null";
+                currentRecipeString += item.itemName;
             }
         }
 
@@ -78,6 +78,7 @@ public class CraftingManager : MonoBehaviour
                 resultSlot.item = recipeResults[i];
             }
         }
+        Debug.Log(currentRecipeString);
     }
     public void OnClikSlot(Slot slot)
     {
