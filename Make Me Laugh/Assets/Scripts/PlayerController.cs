@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,15 +12,20 @@ public class PlayerController : MonoBehaviour
     Vector2 movementInput;
     Vector3 movementVector;
     [SerializeField] float moveSpeed = 10f;
+    [SerializeField] float jumpSpeed = 10f;
     float smoothTurningValue = 480f;
     float dashTime = 1f;
+    [SerializeField] ParticleSystem dashParticleSystem;
 
     bool dashPressed;
-    bool canDash;
+    bool canDash = false;
     bool canMove = true;
+    bool canJump;
+    bool isJumpPressed;
 
     int isWalkingHash;
     int isDashingHash;
+    int isJumpingHash;
 
 
     public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
@@ -31,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
         isWalkingHash = Animator.StringToHash("isWalking");
         isDashingHash = Animator.StringToHash("isDashing");
+        isJumpingHash = Animator.StringToHash("isJumping");
 
         playerInput = new PlayerInput();
         playerInput.CharacterController.Move.started += OnMove;
@@ -50,9 +57,8 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         HandleMovement();
-        //Debug.Log(rb.velocity);
         HandleDash();
-        Debug.Log(dashPressed);
+        HandleJump();
 
         rb.MoveRotation(Quaternion.LookRotation(Vector3.LerpUnclamped(transform.forward, movementVector,
             Vector3.Angle(transform.forward, movementVector) / smoothTurningValue)));
@@ -71,6 +77,11 @@ public class PlayerController : MonoBehaviour
         dashPressed = callback.ReadValueAsButton();
     }
 
+    void OnJump(InputAction.CallbackContext callback)
+    {
+        isJumpPressed = callback.ReadValueAsButton();
+    }
+
     void HandleMovement()
     {
         if (canMove) {
@@ -84,23 +95,31 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void HandleDash()
+    {
+        if (dashPressed && canDash) {
+            canMove = false;
+            StartCoroutine(Dash());
+        }
+    }
+
     private IEnumerator Dash()
     {
         if (!canMove) {
             canMove = false;
             canDash = false;
             animator.SetBool(isDashingHash, true);
-            rb.AddForce(movementVector * 10f, ForceMode.Impulse);
+            rb.AddForce(movementVector * 5f, ForceMode.Impulse);
+            dashParticleSystem.Play();
             yield return new WaitForSeconds(dashTime);
             canMove = true;
         }
     }
 
-    void HandleDash()
+    private void HandleJump()
     {
-        if (dashPressed && canDash) {
-            canMove = false;
-            StartCoroutine(Dash());
+        if (isJumpPressed && canJump && !canDash) {
+
         }
     }
 
