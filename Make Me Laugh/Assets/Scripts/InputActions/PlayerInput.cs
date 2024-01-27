@@ -48,15 +48,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 {
                     ""name"": ""Dash"",
                     ""type"": ""Button"",
-                    ""id"": ""886439cd-0abb-4f7d-b3f8-9da16384d59e"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": ""Press"",
-                    ""initialStateCheck"": true
-                },
-                {
-                    ""name"": ""Dash"",
-                    ""type"": ""Button"",
                     ""id"": ""151c840c-370a-4dc6-8454-8aeca11b1149"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
@@ -216,7 +207,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
         m_CharacterController_Move = m_CharacterController.FindAction("Move", throwIfNotFound: true);
         m_CharacterController_Jump = m_CharacterController.FindAction("Jump", throwIfNotFound: true);
         m_CharacterController_Dash = m_CharacterController.FindAction("Dash", throwIfNotFound: true);
-        m_CharacterController_Dash = m_CharacterController.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -279,14 +269,12 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     private readonly InputAction m_CharacterController_Move;
     private readonly InputAction m_CharacterController_Jump;
     private readonly InputAction m_CharacterController_Dash;
-    private readonly InputAction m_CharacterController_Dash;
     public struct CharacterControllerActions
     {
         private @PlayerInput m_Wrapper;
         public CharacterControllerActions(@PlayerInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Move => m_Wrapper.m_CharacterController_Move;
         public InputAction @Jump => m_Wrapper.m_CharacterController_Jump;
-        public InputAction @Dash => m_Wrapper.m_CharacterController_Dash;
         public InputAction @Dash => m_Wrapper.m_CharacterController_Dash;
         public InputActionMap Get() { return m_Wrapper.m_CharacterController; }
         public void Enable() { Get().Enable(); }
@@ -306,9 +294,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Dash.started -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
                 @Dash.performed -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
                 @Dash.canceled -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
-                @Dash.started -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
-                @Dash.performed -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
-                @Dash.canceled -= m_Wrapper.m_CharacterControllerActionsCallbackInterface.OnDash;
             }
             m_Wrapper.m_CharacterControllerActionsCallbackInterface = instance;
             if (instance != null)
@@ -322,9 +307,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
                 @Dash.started += instance.OnDash;
                 @Dash.performed += instance.OnDash;
                 @Dash.canceled += instance.OnDash;
-                @Dash.started += instance.OnDash;
-                @Dash.performed += instance.OnDash;
-                @Dash.canceled += instance.OnDash;
             }
         }
     }
@@ -333,7 +315,6 @@ public partial class @PlayerInput : IInputActionCollection2, IDisposable
     {
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
-        void OnDash(InputAction.CallbackContext context);
         void OnDash(InputAction.CallbackContext context);
     }
 }
