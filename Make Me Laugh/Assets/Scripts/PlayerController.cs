@@ -12,9 +12,15 @@ public class PlayerController : MonoBehaviour
     Vector3 movementVector;
     [SerializeField] float moveSpeed = 10f;
     float smoothTurningValue = 480f;
+    float dashTime = 1f;
 
+    bool dashPressed;
+    bool canDash;
+    bool canMove = true;
 
     int isWalkingHash;
+    int isDashingHash;
+
 
     public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
 
@@ -24,11 +30,15 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
 
         isWalkingHash = Animator.StringToHash("isWalking");
+        isDashingHash = Animator.StringToHash("isDashing");
 
         playerInput = new PlayerInput();
         playerInput.CharacterController.Move.started += OnMove;
         playerInput.CharacterController.Move.performed += OnMove;
         playerInput.CharacterController.Move.canceled += OnMove;
+
+        playerInput.CharacterController.Dash.started += OnDash;
+        playerInput.CharacterController.Dash.canceled += OnDash;
 
     }
 
@@ -41,6 +51,8 @@ public class PlayerController : MonoBehaviour
     {
         HandleMovement();
         //Debug.Log(rb.velocity);
+        HandleDash();
+        Debug.Log(dashPressed);
 
         rb.MoveRotation(Quaternion.LookRotation(Vector3.LerpUnclamped(transform.forward, movementVector,
             Vector3.Angle(transform.forward, movementVector) / smoothTurningValue)));
@@ -54,13 +66,42 @@ public class PlayerController : MonoBehaviour
 
     }
 
+    void OnDash(InputAction.CallbackContext callback)
+    {
+        dashPressed = callback.ReadValueAsButton();
+    }
+
     void HandleMovement()
     {
-        movementVector.z = movementInput.y;
-        movementVector.x = movementInput.x;
-        rb.velocity = movementVector * moveSpeed * Time.deltaTime;
-        animator.SetBool(isWalkingHash, rb.velocity != Vector3.zero ? true : false);
+        if (canMove) {
+            canDash = true;
+            animator.SetBool(isDashingHash, false);
+            animator.SetBool(isWalkingHash, rb.velocity != Vector3.zero ? true : false);
+            movementVector.z = movementInput.y;
+            movementVector.x = movementInput.x;
+            rb.velocity = movementVector * moveSpeed * Time.deltaTime;
+        }
 
+    }
+
+    private IEnumerator Dash()
+    {
+        if (!canMove) {
+            canMove = false;
+            canDash = false;
+            animator.SetBool(isDashingHash, true);
+            rb.AddForce(movementVector * 10f, ForceMode.Impulse);
+            yield return new WaitForSeconds(dashTime);
+            canMove = true;
+        }
+    }
+
+    void HandleDash()
+    {
+        if (dashPressed && canDash) {
+            canMove = false;
+            StartCoroutine(Dash());
+        }
     }
 
     private void OnEnable()
@@ -71,6 +112,11 @@ public class PlayerController : MonoBehaviour
     private void OnDisable()
     {
         playerInput.CharacterController.Disable();
+    }
+
+    public void PlayWalkingAnimation()
+    {
+        animator.SetBool(isWalkingHash, true);
     }
 
 }
