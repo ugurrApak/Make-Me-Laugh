@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Make Me Laugh/Assets/Prefabs.meta
 guid: 571b1d8a5f565e640adf48f54a8cfec5
+========
+guid: 2046eaf3a737f43428cac7a6d108ab4d
+>>>>>>>> origin/salih:Make Me Laugh/Assets/Animations.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
