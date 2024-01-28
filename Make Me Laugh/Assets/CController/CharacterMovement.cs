@@ -39,6 +39,7 @@ public class CharacterMovement : MonoBehaviour
     float jumpVelocity;
     float maxJumpHeight = 1.5f;
     float maxJumpTime = 0.75f;
+    bool isFanArea;
 
     //Rotate Variables
     public float turnSmoothTime = 0.1f;
@@ -148,12 +149,13 @@ public class CharacterMovement : MonoBehaviour
 
     private void HandleJump()
     {
-        if (isJumpPressed && !isJumping && characterController.isGrounded) {
+        if (isJumpPressed && !isJumping && characterController.isGrounded || isFanArea) {
             isJumping = true;
             isJumpAnimating = true;
             animator.SetBool(isJumpingHash, true);
             movementVector.y = jumpVelocity;
             runVector.y = jumpVelocity;
+            isFanArea= false;
         }
         else if (!isJumpPressed && isJumping && characterController.isGrounded) {
             animator.SetBool(isJumpingHash, false);
@@ -199,6 +201,14 @@ public class CharacterMovement : MonoBehaviour
         {
             Debug.Log(hit.gameObject.name);
             StartCoroutine(WaitForFall(rb));
+        }
+        else if (rb != null && rb.GetComponent<AreaEffector3D>())
+        {
+            isFanArea= true;
+        }
+        if (rb == null)
+        {
+            isFanArea = false;
         }
     }
     IEnumerator WaitForFall(Rigidbody rb)

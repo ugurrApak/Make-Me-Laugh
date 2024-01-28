@@ -86,49 +86,6 @@ Transform:
   m_Father: {fileID: 14026522339073101}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2853873793617511637
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5244829514978347975}
-  m_Layer: 0
-  m_Name: Floor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5244829514978347975
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2853873793617511637}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.628, y: -0.18, z: 3.78}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2501501375613123918}
-  - {fileID: 2568154194156040166}
-  - {fileID: 3918640411094720205}
-  - {fileID: 4477799316855507919}
-  - {fileID: 837769863723348924}
-  - {fileID: 3272970233494888052}
-  - {fileID: 4446246894399460948}
-  - {fileID: 2128093732270612465}
-  - {fileID: 5141640420441842690}
-  - {fileID: 8449873544444757957}
-  - {fileID: 2288791395197183512}
-  - {fileID: 8819896353683056085}
-  m_Father: {fileID: 14026522339073101}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3572846329804570927
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,7 +138,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 14026522339073101}
-  - component: {fileID: 1150071875446664249}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -214,20 +170,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &1150071875446664249
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3681038139682466484}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 0}
 --- !u!1 &3757511690438866283
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,6 +491,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -623,6 +569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -697,6 +647,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -771,6 +725,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -845,6 +803,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -919,6 +881,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -993,6 +959,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -1003,6 +973,68 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 560420920150392467}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &594513197060584081
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 14026522339073101}
+    m_Modifications:
+    - target: {fileID: 3448312015444883012, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_Name
+      value: Floor
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.628
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.78
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+--- !u!4 &5244829514978347975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4650320922259437910, guid: 4bef6294521f1f94089e4be208f67f87, type: 3}
+  m_PrefabInstance: {fileID: 594513197060584081}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &707451169867103626
 PrefabInstance:
@@ -1067,6 +1099,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -1141,6 +1177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -1215,6 +1255,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -1225,80 +1269,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 831153922162637417}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &876761832931234903
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.03
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &837769863723348924 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 876761832931234903}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1225804031731849103
 PrefabInstance:
@@ -1363,6 +1333,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -1437,6 +1411,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -1511,6 +1489,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -1585,6 +1567,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -1659,6 +1645,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -1733,6 +1723,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -1807,6 +1801,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -1881,6 +1879,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -1955,6 +1957,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -2029,6 +2035,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -2103,6 +2113,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -2113,80 +2127,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 1742217209523632553}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1750161758671045107
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.28999996
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (11)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &2288791395197183512 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 1750161758671045107}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1772532748727564287
 PrefabInstance:
@@ -2251,6 +2191,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -2261,80 +2205,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 1772532748727564287}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1874122534761592858
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.21
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (8)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &2128093732270612465 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 1874122534761592858}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2023118981994663442
 PrefabInstance:
@@ -2399,6 +2269,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -2473,6 +2347,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -2547,6 +2425,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -2621,6 +2503,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -2631,80 +2517,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 2404688275116179509}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2605706078694197261
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.984
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &2568154194156040166 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 2605706078694197261}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2608771006005976236
 PrefabInstance:
@@ -2769,6 +2581,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -2779,80 +2595,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 2608771006005976236}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2683484855365229221
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -3.343
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &2501501375613123918 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 2683484855365229221}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2783979482268026017
 PrefabInstance:
@@ -2917,6 +2659,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -2991,6 +2737,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -3065,6 +2815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -3139,6 +2893,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -3213,6 +2971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -3287,6 +3049,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -3297,80 +3063,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 3016220341728987274}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3089843639524702623
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.7499999
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (6)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &3272970233494888052 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 3089843639524702623}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3090913202989311752
 PrefabInstance:
@@ -3435,6 +3127,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -3509,6 +3205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -3583,6 +3283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -3657,6 +3361,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -3731,6 +3439,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -3805,6 +3517,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -3815,80 +3531,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 3543878017140130903}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3597100446909987110
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.6529999
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &3918640411094720205 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 3597100446909987110}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3609163630511198781
 PrefabInstance:
@@ -3953,6 +3595,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -4027,6 +3673,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -4101,6 +3751,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -4175,6 +3829,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -4249,6 +3907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -4323,6 +3985,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -4333,80 +3999,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 4130672363562133179}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4156523098555132964
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.309
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (4)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &4477799316855507919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 4156523098555132964}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4190612215919446594
 PrefabInstance:
@@ -4471,6 +4063,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -4481,80 +4077,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 4190612215919446594}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4196937601919250879
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.48
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &4446246894399460948 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 4196937601919250879}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4287442040084120573
 PrefabInstance:
@@ -4619,6 +4141,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -4693,6 +4219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -4767,6 +4297,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -4841,6 +4375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -4915,6 +4453,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -4925,80 +4467,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 4667505326542750260}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4670373301854700521
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.91999984
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (9)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &5141640420441842690 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 4670373301854700521}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4939367635637576683
 PrefabInstance:
@@ -5063,6 +4531,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -5137,6 +4609,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -5211,6 +4687,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -5285,6 +4765,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -5359,6 +4843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -5433,6 +4921,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -5507,6 +4999,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -5581,6 +5077,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -5655,6 +5155,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -5729,6 +5233,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -5803,6 +5311,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -5877,6 +5389,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -5951,6 +5467,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -6025,6 +5545,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -6099,6 +5623,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -6173,6 +5701,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -6247,6 +5779,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -6321,6 +5857,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -6395,6 +5935,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -6469,6 +6013,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -6543,6 +6091,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
@@ -6617,6 +6169,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -6691,6 +6247,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -6765,6 +6325,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -6839,6 +6403,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -6913,6 +6481,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -6987,6 +6559,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -7061,6 +6637,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -7135,6 +6715,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -7209,6 +6793,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (11)
@@ -7283,6 +6871,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -7357,6 +6949,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -7431,6 +7027,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -7505,6 +7105,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (7)
@@ -7579,6 +7183,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -7653,6 +7261,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -7727,6 +7339,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -7801,6 +7417,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -7875,6 +7495,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -7949,6 +7573,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -8023,6 +7651,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -8097,6 +7729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -8171,6 +7807,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -8245,6 +7885,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -8319,6 +7963,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -8393,6 +8041,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -8467,6 +8119,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (10)
@@ -8477,80 +8133,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 8240153079604146578}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8271215056291930158
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.63999987
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (10)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &8449873544444757957 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 8271215056291930158}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8366220382497071830
 PrefabInstance:
@@ -8615,6 +8197,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (9)
@@ -8689,6 +8275,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -8763,6 +8353,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -8837,6 +8431,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -8911,6 +8509,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (8)
@@ -8985,6 +8587,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (6)
@@ -9059,6 +8665,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -9133,6 +8743,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (12)
@@ -9207,6 +8821,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -9281,6 +8899,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: d75ed8d8ef0366d448e7c8c06166aaf7, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -9291,78 +8913,4 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
   m_PrefabInstance: {fileID: 9004650653762658986}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &9073671868790587966
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 5244829514978347975}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000008146035
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-      propertyPath: m_Name
-      value: cave floor stone (12)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
---- !u!4 &8819896353683056085 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
-  m_PrefabInstance: {fileID: 9073671868790587966}
   m_PrefabAsset: {fileID: 0}

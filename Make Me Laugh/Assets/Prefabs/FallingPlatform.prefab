@@ -130,6 +130,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ed8d2fcd7cb87f45b73f00a19ff2c88, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (4)
@@ -204,6 +208,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ed8d2fcd7cb87f45b73f00a19ff2c88, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (2)
@@ -278,6 +286,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ed8d2fcd7cb87f45b73f00a19ff2c88, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (5)
@@ -352,6 +364,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ed8d2fcd7cb87f45b73f00a19ff2c88, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (3)
@@ -426,6 +442,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0ed8d2fcd7cb87f45b73f00a19ff2c88, type: 2}
     - target: {fileID: 919132149155446097, guid: 1b6180345ef92fe42ae1579f19c9084c, type: 3}
       propertyPath: m_Name
       value: cave floor stone (1)
