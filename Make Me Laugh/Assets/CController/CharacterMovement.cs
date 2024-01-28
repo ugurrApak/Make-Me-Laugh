@@ -47,6 +47,9 @@ public class CharacterMovement : MonoBehaviour
     //Getters and Setters
     public float MoveSpeed { get => moveSpeed; set => moveSpeed = value; }
 
+    public float RunSpeed { get => runSpeed; set => runSpeed = value; }
+
+
     private void Awake()
     {
         playerInput = new PlayerInput();
@@ -185,5 +188,23 @@ public class CharacterMovement : MonoBehaviour
     private void OnDisable()
     {
         playerInput.CharacterController.Disable();
+    }
+
+    private void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody rb = hit.gameObject.GetComponent<Rigidbody>();
+        if (rb != null && rb.gameObject.tag == "FallingPlatform")
+        {
+            Debug.Log(hit.gameObject.name);
+            StartCoroutine(WaitForFall(rb));
+        }
+    }
+    IEnumerator WaitForFall(Rigidbody rb)
+    {
+        yield return new WaitForSeconds(0.5f);
+        rb.isKinematic = false;
+        rb.GetComponent<BoxCollider>().enabled = false;
+        yield return new WaitForSeconds(1f);
+        Destroy(rb.gameObject);
     }
 }
