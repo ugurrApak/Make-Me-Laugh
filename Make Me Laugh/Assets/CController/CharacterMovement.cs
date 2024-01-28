@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -206,9 +207,9 @@ public class CharacterMovement : MonoBehaviour
         {
             isFanArea= true;
         }
-        if (rb == null)
+        if (hit.gameObject.tag == "Lava")
         {
-            isFanArea = false;
+            SceneManager.LoadScene(1);
         }
     }
     IEnumerator WaitForFall(Rigidbody rb)
