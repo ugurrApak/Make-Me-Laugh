@@ -30,14 +30,15 @@ public class CharacterMovement : MonoBehaviour
     int isRunningHash;
     bool isWalking;
     bool isRunning;
+    bool isJumpAnimating;
 
     //Jump Variables
     int isJumpingHash;
     bool isJumpPressed;
     bool isJumping;
     float jumpVelocity;
-    float maxJumpHeight = 1f;
-    float maxJumpTime = 0.5f;
+    float maxJumpHeight = 1.5f;
+    float maxJumpTime = 0.75f;
 
     //Rotate Variables
     public float turnSmoothTime = 0.1f;
@@ -86,9 +87,8 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleMovement();
-        HandleAnimation();
         HandleRotation();
+        HandleAnimation();
         if (isRunPressed) {
             characterController.Move(runVector * Time.deltaTime);
         }
@@ -99,19 +99,14 @@ public class CharacterMovement : MonoBehaviour
         HandleJump();
     }
 
-    void HandleMovement()
-    {
-        movementVector = new Vector3(movementInput.x, movementVector.y, movementInput.y);
-        movementVector *= moveSpeed;
-        runVector = movementVector * runSpeed;
-
-        isWalkPressed = movementInput != Vector2.zero ? true : false;
-
-    }
 
     void HandleGravity()
     {
         if (characterController.isGrounded) {
+            if (isJumpAnimating) {
+                animator.SetBool(isJumpingHash, false);
+                isJumpAnimating = false;
+            }
             movementVector.y = groundGravity;
             runVector.y = groundGravity;
         }
@@ -151,10 +146,13 @@ public class CharacterMovement : MonoBehaviour
     {
         if (isJumpPressed && !isJumping && characterController.isGrounded) {
             isJumping = true;
+            isJumpAnimating = true;
+            animator.SetBool(isJumpingHash, true);
             movementVector.y = jumpVelocity;
             runVector.y = jumpVelocity;
         }
         else if (!isJumpPressed && isJumping && characterController.isGrounded) {
+            animator.SetBool(isJumpingHash, false);
             isJumping = false;
         }
     }
@@ -162,6 +160,11 @@ public class CharacterMovement : MonoBehaviour
     void OnMove(InputAction.CallbackContext callback)
     {
         movementInput = callback.ReadValue<Vector2>();
+        movementVector = new Vector3(movementInput.x, movementVector.y, movementInput.y);
+        movementVector *= moveSpeed;
+        runVector = movementVector * runSpeed;
+        isWalkPressed = movementInput != Vector2.zero ? true : false;
+
     }
 
     void OnRun(InputAction.CallbackContext callback)
@@ -183,5 +186,4 @@ public class CharacterMovement : MonoBehaviour
     {
         playerInput.CharacterController.Disable();
     }
-
 }
