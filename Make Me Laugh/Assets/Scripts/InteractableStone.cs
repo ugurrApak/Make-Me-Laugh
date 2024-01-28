@@ -9,13 +9,15 @@ public class InteractableStone : MonoBehaviour, IInteractable
     {
         if (!isParent)
         {
-            interactor.GetComponent<PlayerController>().MoveSpeed = 300f;
+            interactor.GetComponent<CharacterMovement>().MoveSpeed = 1.4f;
+            interactor.GetComponent<CharacterMovement>().RunSpeed = 1.4f;
             transform.SetParent(interactor.transform);
             isParent = true;
         }
         else
         {
-            interactor.GetComponent<PlayerController>().MoveSpeed = 500f;
+            interactor.GetComponent<CharacterMovement>().MoveSpeed = 2f;
+            interactor.GetComponent<CharacterMovement>().RunSpeed = 3f;
             transform.parent = null;
             isParent = false;
         }
