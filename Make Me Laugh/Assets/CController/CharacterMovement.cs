@@ -87,6 +87,8 @@ public class CharacterMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(movementVector);
+
         HandleRotation();
         HandleAnimation();
         if (isRunPressed) {
@@ -98,7 +100,6 @@ public class CharacterMovement : MonoBehaviour
         HandleGravity();
         HandleJump();
     }
-
 
     void HandleGravity()
     {
@@ -160,9 +161,10 @@ public class CharacterMovement : MonoBehaviour
     void OnMove(InputAction.CallbackContext callback)
     {
         movementInput = callback.ReadValue<Vector2>();
-        movementVector = new Vector3(movementInput.x, movementVector.y, movementInput.y);
-        movementVector *= moveSpeed;
-        runVector = movementVector * runSpeed;
+        movementVector.x = movementInput.x * moveSpeed;
+        movementVector.z = movementInput.y * moveSpeed;
+        runVector.x = movementInput.x * runSpeed;
+        runVector.z = movementInput.y * runSpeed;
         isWalkPressed = movementInput != Vector2.zero ? true : false;
 
     }
